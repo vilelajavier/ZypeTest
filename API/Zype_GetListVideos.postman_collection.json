@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "141ba09f-7662-49df-83a7-4df88277eb4b",
+		"name": "Zype",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get ListVideos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/videos?app_key={{app_key}}&id={{id}}&id!={{id!}}&created_at={{created_at}}&q={{q}}&order={{order}}&sort={{sort}}&page={{page}}&per_page={{per_page}}&category={{category}}&category!={{category!}}&friendly_title={{friendly_title}}&mature_content={{mature_content}}&active={{active}}&on_air={{on_air}}&published_at={{published_at}}&source_id={{source_id}}&type={{type}}&dpt={{dpt}}&zobject_details={{zobject_details}}&playlist_id.inclusive={{playlist_id.inclusive}}&crunchyroll_id={{crunchyroll_id}}&vimeo_id={{vimeo_id}}&youtube_id={{youtube_id}}&zobject_id={{zobject_id}}&zobject_id!={{zobject_id!}}&hulu_id={{hulu_id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"videos"
+					],
+					"query": [
+						{
+							"key": "app_key",
+							"value": "{{app_key}}"
+						},
+						{
+							"key": "id",
+							"value": "{{id}}"
+						},
+						{
+							"key": "id!",
+							"value": "{{id!}}"
+						},
+						{
+							"key": "created_at",
+							"value": "{{created_at}}"
+						},
+						{
+							"key": "q",
+							"value": "{{q}}"
+						},
+						{
+							"key": "order",
+							"value": "{{order}}"
+						},
+						{
+							"key": "sort",
+							"value": "{{sort}}"
+						},
+						{
+							"key": "page",
+							"value": "{{page}}"
+						},
+						{
+							"key": "per_page",
+							"value": "{{per_page}}"
+						},
+						{
+							"key": "category",
+							"value": "{{category}}"
+						},
+						{
+							"key": "category!",
+							"value": "{{category!}}"
+						},
+						{
+							"key": "friendly_title",
+							"value": "{{friendly_title}}"
+						},
+						{
+							"key": "mature_content",
+							"value": "{{mature_content}}"
+						},
+						{
+							"key": "active",
+							"value": "{{active}}"
+						},
+						{
+							"key": "on_air",
+							"value": "{{on_air}}"
+						},
+						{
+							"key": "published_at",
+							"value": "{{published_at}}"
+						},
+						{
+							"key": "source_id",
+							"value": "{{source_id}}"
+						},
+						{
+							"key": "type",
+							"value": "{{type}}"
+						},
+						{
+							"key": "dpt",
+							"value": "{{dpt}}"
+						},
+						{
+							"key": "zobject_details",
+							"value": "{{zobject_details}}"
+						},
+						{
+							"key": "playlist_id.inclusive",
+							"value": "{{playlist_id.inclusive}}"
+						},
+						{
+							"key": "crunchyroll_id",
+							"value": "{{crunchyroll_id}}"
+						},
+						{
+							"key": "vimeo_id",
+							"value": "{{vimeo_id}}"
+						},
+						{
+							"key": "youtube_id",
+							"value": "{{youtube_id}}"
+						},
+						{
+							"key": "zobject_id",
+							"value": "{{zobject_id}}"
+						},
+						{
+							"key": "zobject_id!",
+							"value": "{{zobject_id!}}"
+						},
+						{
+							"key": "hulu_id",
+							"value": "{{hulu_id}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
